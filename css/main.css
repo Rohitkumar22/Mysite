@@ -1,0 +1,368 @@
+.menu-btn {
+    cursor: pointer;
+    transition: all 1.0s ease-out;
+    padding:0.2em;
+    margin: 0  40%;
+    font-size: 20px;
+    box-shadow: #ff4a0388 1px 1px 10px 1px ;
+
+}
+a{
+    color: #838383ec;
+    font-family: 'Montserrat', sans-serif;
+
+    /* font-size: px; */
+
+}
+.Text-primary{
+    color: #ff4b03;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    margin-bottom: 2rem; 
+    
+}
+li.nav-item{
+   
+    width: 20%;
+    display: inline;
+    margin: 80px;
+}
+
+
+a:hover{
+    color:#dfdfdf;
+    text-decoration: none;
+
+    transition: all  0.5s ease-in-out;
+    text-decoration: none;
+    
+}
+ul{
+    margin: 20px 50px;
+    font-size: 35px;
+}
+.extra-info{
+    margin-left: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+.home{
+   overflow: hidden; 
+   background: #f7f8fa4f; 
+}
+.home h1{
+    margin-top: 30vh;
+    width: 100%;
+}
+main{
+    width: 100%;
+    padding:0 30vh;
+}
+.menu{
+    position: fixed;
+    /* sopacity: 0.9; */
+   display: block;
+   padding: 10px;
+   width:100%;
+   height: 100%;
+   z-index: -100;
+   visibility: hidden;
+   transform: translate3d(100%,0,0);
+   transition: all 0.5s ease-out;
+   
+  
+}
+.menu-logo{
+    
+    height: 50%;
+    width: 100%;
+    background: #ff7b0005;
+    padding: 1% 40%;
+/* visibility: hidden; */
+    
+}
+.menu-nav{
+list-style: none;
+
+display: block;
+
+
+}
+li.list-item {
+display: inline;
+width: 30vw;
+}
+
+nav.menu.show{
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0,0,0);
+    background: #ffffff;
+    transition: initial 20s ease-out;
+    visibility: visible;
+    z-index: 10;
+   
+} 
+
+    nav.menu.show.menu-logo.show{
+        position: relative;
+        z-index: 100;
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 40vh;
+    }
+    li.list-item.show {
+        list-style: none;
+        width: 30%;
+        display: inline;
+        margin-right: 70px;
+        color: #050505;
+    }
+    .show>a{
+        padding: 3px;
+    }
+    .show > a:hover{
+        color: #f1f1f1;
+        box-shadow: #ff4b03 1px 1px 20px 1px;
+        background: #ff4b03;
+    }
+
+
+footer{
+    position: fixed;
+    bottom: 3px;
+    background: rgb(245, 247, 250);
+    width: 100%;
+    padding: 0 41%;
+    
+}
+.copyright{
+    color: #ff4b03;
+}
+
+
+body {
+    overflow: hidden;
+    height: 99vh;
+    width: 100%;
+
+
+  }
+
+  @keyframes float{
+    0% {
+      
+              transform: translateY(0px);
+    }
+    50%{
+        
+        transform: translateY(-10px);
+        
+    }
+    
+
+    100% {
+      
+        -webkit-transform: translatey(0px);
+              transform: translateY(0px);
+    }
+  }
+
+      
+      canvas.dots {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+      }
+      .logo-box{
+          position: fixed;
+          width: 250px;
+          height: 250px;
+        top: 60px;
+          display: block;
+          transform: rotate(-45deg);
+          
+          background:url('../img/template_share_sayhihalf_shareM_1587102727299.png');
+        background-repeat: no-repeat;
+            
+      }
+
+      .logo-box:hover{
+          box-shadow: #ff4b03 1px 1px 10px 1px;
+          transition: 1s ease-in-out;
+          transform:rotate(315deg);
+      }
+      .logo-box >#img:hover{
+          transition: 1.5s ease-out;
+          background: none;
+      }
+.menu-btn{
+align-content: center;
+background:white;
+border: 1px solid #ff4b03;
+text-decoration:none;
+padding: 5px;
+box-sizing: border-box;
+animation: float 5s ease-in-out  infinite ;
+
+
+}
+.icons{
+    position: relative;
+    margin: 1% 30%;
+    width: 100%;
+    height:100%;
+    
+
+}
+.icon{
+color: #747474;
+text-decoration: none;
+
+margin: 5px;
+padding: 0 5px;
+align-self: center;
+
+}
+
+.icon:hover
+{
+    
+    color: #ff4b03;
+    transition: 0.5s ease-in;
+}
+
+.menu-btn:hover{
+    border: none;
+    padding: 5px;
+    background:#ff4b03;
+    color: white;
+    transition: 0.4s ease-in;
+}
+
+
+@media screen and (max-width:600px){
+
+main{
+    width: 100%;
+    height: 95%;
+    padding: 20px 20px 0px 20px;
+    margin: 0px;
+}
+footer{
+    position: fixed;
+    height: 5%;
+    background: rgb(245, 247, 250);
+    width: 100%;
+    padding: 0 8%;
+    font-size: 10px;
+    bottom: 0px;
+}
+.copyright{
+    width: 90%;
+    font-size: 15px;
+    padding: 0 10%;
+}
+.dots{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.menu-logo{
+
+    padding:0px 28%;
+/* visibility: hidden; */
+    
+}
+.menu-btn {
+    cursor: pointer;
+    transition: all 1.0s ease-out;
+    width: 25%;
+    height: 30px;
+    margin: 40px 40%;
+    font-size: 15px;
+    padding: 2px;
+    box-shadow: #ff4a0388 1px 1px 10px 1px ;
+
+}
+.home h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Text-primary{
+    color: #ff4b03;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 2rem; 
+    margin-top: 10px;
+}
+.extra-info{
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.icons{
+    width: 100%;
+    height: 20%;
+    margin: 50px 0px 0px 0px;
+    bottom: 0px;
+    padding: 35px 40px 0px 40px;
+}
+a{
+    color: #ff4b03;
+}
+
+
+nav.menu.show.menu-logo.show{
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 30%;
+    padding: 0px 0px;
+
+}
+.logo-box{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    top: 40px;
+    display: block;
+    transform: rotate(0deg);
+    border-radius: 250px;
+    background: #f1f1f1;
+    background:url('../img/Me-small.png');
+    background-repeat: no-repeat;
+      
+}
+
+
+ul{
+    padding:0px;
+    margin: 0px;
+    align-items: center;
+}
+li.nav-item.show {
+    list-style: none;
+   width: 100%;
+    display: block;
+   margin: 10px 100px;
+    font-size: 25px;
+    color: #050505;
+}
+a{
+    padding: auto;
+}
+}

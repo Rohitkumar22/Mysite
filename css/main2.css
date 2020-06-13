@@ -1,0 +1,481 @@
+main{
+    position: absolute;
+    padding:0 10%;
+    
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+#extra{
+
+ display: none;
+
+}
+
+.card{
+margin:0 15px;
+background: #fcfcfc;
+box-shadow: #cacaca 5px 5px 5px;
+border: none;
+
+}
+
+
+#ft{
+  position: absolute;
+  top: 360vh;
+  bottom: 5px;
+  width: 100%;
+  height: 80px;
+  background: rgba(245, 49, 0, 0.801);
+  padding: 20px;
+ 
+}
+span.txt{
+
+  position: relative;
+  display: inline;
+  width: 49%;
+  height: 100%;
+
+  padding: 0% 10%;
+  float: left;
+  font-size: 30px;margin: 1px;
+  color: aliceblue;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+
+}
+.txt a{
+  text-decoration: none;
+  color: white;
+}
+
+#extra.show{
+  display: initial;
+
+}
+
+
+.Row{
+width: 100%;
+height: auto;
+padding: 10px 10%;
+
+}
+
+.extra-heading{
+  font-size: 40px;
+  width: 100%;
+text-align: center;
+display: block;
+font-weight: 400;
+font-family: 'Libre Baskerville', serif;
+margin-bottom: 3%;
+
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10);
+    }
+    100%{
+        transform: translateY(-10);
+    }
+}
+.me{
+min-height: 100vh;
+background: #f9fbff91;
+padding:2%, 5%; 
+
+}
+.me-heading{
+width: 100%;
+height: 100px;
+text-align: center;
+padding:  2% 2%;
+justify-content: center;
+font-size: 60px;
+background: rgba(255, 253, 245, 0.61);
+font-family: 'Libre Baskerville', serif;
+
+color: #414141;
+}
+.Headhighlight{
+ color: #ff4a03;   
+ letter-spacing: -10px; 
+}.Headhighlight2{
+  color: #ff4a03;
+}
+.me-photo{
+margin: 10px 20%;
+padding: 1%;
+
+}
+.me-photo #img{
+    z-index: 100;
+    width: 200px;
+    height:200px;
+    margin: 0 35%;
+    border-radius: 500px;
+    border: 1px solid #ff4a03;
+    box-shadow: #fa670559 1px 1px 30px 1px;
+    animation: float 5s ease-in-out infinite;
+}
+.line{
+    margin: 5%  0;
+    width: 100%;
+    height: 1px;
+    background: #ff4a03;
+}
+.me-description {
+padding: 0 10%;
+color: rgb(68, 68, 68);
+font-family: 'Raleway', sans-serif;
+font-size: 25px;
+
+}
+
+.me-skills{
+    padding: 0 9%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+
+}
+
+/*Skill timeline starting */
+
+.timeline {
+    position: relative;
+    max-width: 1050px;
+    margin: 0 auto;
+    z-index: inherit;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color:#ff4a03 ;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+   
+  }
+  
+  /* Container around content */
+  .container {
+    
+    position: relative;
+    background-color: inherit;
+    width: 40%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: -300px;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 300px;
+  }
+  #img{
+    background: url('/img/Me.png');
+    width: 50px;
+    height: 5px;
+    background-size: cover;
+
+  }
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 5px;
+    border: medium solid rgb(252, 238, 219);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(255, 247, 236);
+  }
+  .left::after{
+      right: -115px;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 5px;
+    border: medium solid rgb(252, 237, 216);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(255, 247, 236) transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+   left: -112px; 
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color:rgb(255, 247, 236);
+    position: relative;
+    border-radius: 6px;
+  }
+  
+
+
+/*Skill timeline ending */
+
+.highlight{
+    color: rgb(250, 172, 4);
+    font-size: 20px;
+    font-weight: 600;
+}
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#contact{
+    position: relative;
+    background: #f9fbff91;
+    width: 100%;
+   
+    display: block;
+    
+}
+.contact-heading{
+width: 100%;
+height: 100px;
+padding: 3% 40%;
+padding-top: 0;
+background: rgba(255, 253, 245, 0.61);
+font-family: 'Libre Baskerville', serif;
+color: #414141;
+}
+
+.contact-heading h1{
+background: #fffdf59c;
+padding: 40px 0px;   
+}
+.contact-description{
+    padding: 3% 3% 0 3%;
+    width: 100%;
+    height: 60vh;
+    display: block;
+}
+.contact-left{
+    float: left;
+    display: inline;
+    width: 40%;
+   
+    padding: 0 auto;
+
+}
+.contact-right{
+    
+    float: right;
+    font-size: 15px;
+    
+    font-family: 'Libre Baskerville', serif;
+    display: inline;
+    width: 40%;
+    
+}
+.contact-right form{
+height: 60%;
+width:100%;
+
+align-self: center;
+justify-self: center;
+ padding: 10% 0;
+ text-align: center;
+}
+
+.row
+{
+
+  height: 20%;
+  display: block;
+  padding: 10px;
+}
+.row label {
+display: inline;
+width: 30%;
+}
+.row input,.row textarea{
+  width: 50%;
+ 
+  float: right;
+}
+
+.submit
+{
+text-decoration: none;
+ width: 30%;
+ float: none;
+ margin: 10px auto; 
+ border: none;
+ height: 30px;
+ color: whitesmoke;
+ background: rgb(255, 81, 0);
+}
+.submit a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px)
+{
+
+  main{
+    
+    padding:0 5%;
+   font-size: 20px;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+   margin: 0px;
+   z-index: 1
+}
+
+canvas{
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+
+}
+.me-photo{
+  margin: 2%;
+}
+.me-photo #img{
+  margin: 0px 15%;
+}
+.me,.contact{
+  position: relative;
+}
+.submit{
+  display: block;
+  width: 100%;
+
+}
+#contact{
+ width: 100%;
+ height: 100%;
+}
+.contact-left,.contact-right
+{width: 100%;
+  margin: 10px 0px;
+  display: block;}
+.me-description{
+  font-size: 15px;
+  text-align: center;
+}
+.card-body{
+  background: #f7faff;
+}
+.timeline{
+  margin: 0px;
+}
+.container{
+  margin: 20px;
+  background: #ff4a030a;
+  width: 100%;
+}
+div.container.left,div.container.right{
+  margin: 20px 0px;
+  padding: 0px;
+  text-align: center;
+  color: #ff4a03;
+  
+  border: 2px solid rgb(255, 255, 255);
+}
+.content h2{
+  color: rgb(252, 155, 9);
+  font-family: 'Raleway', sans-serif;
+}
+.content p{
+  color: #757474;
+  font-family: 'Raleway', sans-serif;
+}
+div.timeline::after,div.container.left::before,div.container.right::after,div.container.left::after,div.container.right::before{
+  
+  display: none;
+}
+.right,.left{
+right: 0;
+left:0;
+margin: 10 0 0 0;}
+
+.contact-heading{
+  text-align: center;
+  padding: 0px;
+}
+
+#ft{
+position: absolute;
+top:550vh;
+height: 40px;
+padding: 0;
+margin:0;
+}
+span.txt{
+  width: 100%;
+  padding: 0 auto;
+  
+}
+.contact-right form{
+
+  padding :10% 0 0 0; 
+}
+.clickable{
+  font-size: 25px;
+  height: 20px;
+  
+}
+}
